@@ -17,7 +17,7 @@ function Categories({ items, onClickItem }) {
             <li
               className={activeItem === index ? 'active' : ''}
               onClick={() => onSelectItem(index)}
-              key={'${name}_${index}'}>
+              key={`${name}_${index}`}>
               {name}
             </li>
           ))}
